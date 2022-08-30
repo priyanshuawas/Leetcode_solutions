@@ -9,6 +9,7 @@ class Problem398 {
         }
         for (char c: ransomNote.toCharArray()) {
             if (count[c - 'a'] == 0) { return false; }
+            
             count[c - 'a'] -= 1;
         }
         return true;
